@@ -217,6 +217,7 @@ p {
   
 .slider:before {
     position: absolute;
+    content: url(/images/logo/money.png);
     height: 30px;
     width: 30px;
     left: -5px;
@@ -751,6 +752,11 @@ footer {
     .menuf1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+
+    .menuf2 {
+      display: grid;
+      flex-direction: row;
     }
 
 
