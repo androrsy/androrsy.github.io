@@ -217,7 +217,6 @@ p {
   
 .slider:before {
     position: absolute;
-    content: url(/images/logo/money.png);
     height: 30px;
     width: 30px;
     left: -5px;
