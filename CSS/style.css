@@ -60,7 +60,7 @@ header{
 
 .menubtnacc{
   font-size: 15px;
-  border-top: 2px solid #2196F3;
+  border-top: 2px solid #0065FC;
   font-weight: 400;
   color: #0065FC;
   margin-left: 25px;
@@ -802,6 +802,12 @@ header{
   margin: 0;
   }
 
+  .content {
+    margin: 0 auto;
+    max-width: 1366px;
+    border-radius: 15px;
+}
+
 .menu1{
   flex-flow: nowrap;
   }
@@ -827,7 +833,7 @@ header{
   text-align: center;
   margin: 0;
   margin: 0;
-  padding-left: 10px;
+  width:30%;
   }
 
 .sideimg {
@@ -869,8 +875,6 @@ header{
   flex-direction: row;
   border-radius: 0px 0px 20px 20px;
   margin-right: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
   }
 
 .stars1 {
@@ -879,7 +883,8 @@ header{
 
 .sideitem2 {
   margin: 0;
-  padding-left: 25px;
+  padding-left: 20px;
+  width: 30%;
   }
 
 .acti-0{
@@ -931,7 +936,7 @@ body {
   }
 
 .sideitem {
-  width:80%;
+  width:35%;
   height: 100%;
   background-color: #F2F2F2;
   flex-direction: row;
@@ -980,6 +985,7 @@ body {
   }
 
 .sideitem2 {
+  width:30%;
   margin: 0;
   padding-left: 0px;
   }
@@ -1042,8 +1048,20 @@ body {
  
 @media only screen and (max-width: 376px) {
 
+
+body {
+  position: relative;
+  margin:0 auto;
+}  
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 header{
-  margin:0;
+  margin:0 auto;
   }    
 
 .search {
@@ -1278,12 +1296,12 @@ button.search-btn {
   }
 
 .stars1 {
-  padding-top: 53px;
+  padding-top: 40px;
   color: #0065FC;
   }
 
 .sidep {
-  padding-top: 5px;
+  padding-top: 20px;
   }
     
 .menub1 {
@@ -1313,12 +1331,13 @@ button.search-btn {
   flex-direction: row;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  width:100%;
   }
 
 .sidecontext {
-  margin: 0;
-  width: 100;
+  margin: 0 auto;
+  width: 97%;
   border-radius: 0 0 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1336,7 +1355,8 @@ button.search-btn {
   text-align: center;
   margin: 0 auto;
   border-radius: 0px 0px 0px 0px;
-  padding-bottom: 30px;
+  margin-bottom: 40px;
+  width:100%;
   }
 
 .menub2 {
@@ -1353,18 +1373,13 @@ button.search-btn {
   }
 
 .content{
-  margin:0 auto;
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  max-width: 376px;
+  flex-direction: column;
   }
 
-.navp{
-  display: grid;
-  flex-direction: row;
-  }
-
-.menunavp{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  }
     
 .sidemaincon {
   flex: auto;
@@ -1377,12 +1392,14 @@ button.search-btn {
   margin: 0 auto;
   flex-direction: column;
   flex: auto;
+  width:100%;
   }
     
 .main, .main2 {
   background-color: white;
   flex: auto;
   flex-direction: column;
+  margin-left: 10px;
   }
 
 .activities {
@@ -1551,5 +1568,13 @@ button.search-btn {
   width: 90%;
   margin-left: 10px;
   }
+
+  .acti {
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+ }
 }
 
